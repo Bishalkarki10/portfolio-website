@@ -1,0 +1,595 @@
+.top {
+  margin-top: -15px;
+  margin-left: 0px;
+  position: relative;
+}
+.navbar {
+  width: auto;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 25px 0;
+  border-radius: 20px;
+  border: 0.1px solid;
+  box-shadow: 0 4px 8px 0, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.element {
+  margin: auto;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.element:hover {
+  color: orange;
+}
+.element:after {
+  display: block;
+  content: "";
+  border-bottom: solid 1px rgb(129, 238, 129);
+  padding-bottom: 1%;
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
+}
+
+.element:hover:after {
+  transform: scaleX(1);
+}
+
+form {
+  padding: 0;
+  margin-top: 1px;
+  margin-right: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+  width: 50px;
+  height: 50px;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 4px solid white;
+  padding: 5px;
+  box-shadow: 0px 0px 15px #542828;
+}
+
+input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 42.5px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  display: none;
+  font-size: 1em;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+.fa {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 42.5px;
+  height: 42.5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  color: #b92c2c;
+  text-align: center;
+  font-size: 1.2em;
+  transition: all 1s;
+}
+
+form:hover {
+  width: 200px;
+  cursor: pointer;
+}
+
+form:hover input {
+  display: block;
+}
+
+form:hover .fa {
+  background: #b92c2c;
+  color: white;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap");
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+
+.image {
+  max-width: 450px;
+  display: block;
+  line-height: 0;
+}
+
+picture {
+  width: 100%;
+}
+:root {
+  --dark-blue: hsla(234, 53%, 16%, 1);
+  --pink: hsla(341, 92%, 62%, 1);
+  --light-pink: hsla(341, 100%, 83%, 1);
+  --purple: hsla(261, 75%, 58%, 1);
+  /* neutral */
+  --gray: hsla(233, 10%, 56%, 1);
+  --blue-gray: hsla(234, 25%, 52%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+}
+
+.heading-xl {
+  font: 800 3.5rem/3.75rem "Plus Jakarta Sans", sans-serif;
+  color: var(--dark-blue);
+}
+
+.heading-l {
+  font: 800 2.5rem/3.125rem "Plus Jakarta Sans", sans-serif;
+  color: var(--dark-blue);
+}
+
+.heading-m {
+  font: 800 2rem/2.5rem "Plus Jakarta Sans", sans-serif;
+  color: var(--dark-blue);
+}
+
+.heading-s {
+  font: 800 1.5rem/1.875rem "Plus Jakarta Sans", sans-serif;
+  color: var(--dark-blue);
+}
+
+.body-m {
+  font: 500 1.125rem/1.75rem "Plus Jakarta Sans", sans-serif;
+  color: var(--gray);
+}
+
+.body-s {
+  font: 700 1rem/1.75rem "Plus Jakarta Sans", sans-serif;
+  color: var(--gray);
+}
+
+.link {
+  font: 700 1.125rem/1.75rem "Plus Jakarta Sans", sans-serif;
+  color: var(--pink);
+  text-decoration: none;
+}
+
+.margin-top-card-50 {
+  margin-top: 3.125rem;
+}
+
+.padding-bottom-24 {
+  padding-bottom: 1.5rem;
+}
+
+.padding-bottom-30 {
+  padding-bottom: 1.875rem;
+}
+
+.padding-bottom-50 {
+  padding-bottom: 3.125rem;
+}
+
+.btn {
+  font: 500 1.125rem/1.5rem "Plus Jakarta Sans", sans-serif;
+  padding: 0.875rem 2rem;
+  border-radius: 3.125rem;
+  color: var(--white);
+  transition: all ease 0.3s;
+}
+
+a {
+  color: var(--white);
+}
+
+.btn-1 {
+  background-color: var(--dark-blue);
+}
+
+.btn-2 {
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+}
+
+.btn-3 {
+  background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+  text-decoration: none;
+}
+
+/* *** */
+
+body {
+  line-height: 1.3;
+  text-rendering: optimizeSpeed;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+}
+
+/* header */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.875rem;
+  padding-bottom: 11.25rem;
+}
+
+.logo {
+  fill: var(--dark-blue);
+}
+
+.logo-footer {
+  fill: var(--white);
+}
+
+/* container */
+.container {
+  margin: 0 auto;
+  max-width: 69.375rem;
+}
+
+.padding-inline-20 {
+  padding-inline: 1.25rem;
+}
+
+.margin-inside {
+  padding: 0 2.5rem;
+}
+
+
+.hero {
+  margin-top: 50px;
+  position: relative;
+  overflow: hidden;
+  gap: 1.25rem;
+  padding-bottom: 16.25rem;
+}
+
+.hero-heading {
+  max-width: 31.25rem;
+}
+
+.hero-img {
+  position: absolute;
+  left: 53.4%;
+  top: -20%;
+  z-index: -1;
+}
+
+/* card */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.875rem;
+  row-gap: 3.75rem;
+  padding-bottom: 8.75rem;
+}
+
+.card,
+.card-hover {
+  position: relative;
+  border-radius: 0.9375rem;
+  background-color: var(--white);
+  padding: 2rem 2.375rem;
+  box-shadow: 0rem 1.5625rem 3.125rem rgba(6, 22, 141, 0.0442381);
+  transition: ease-in-out 0.3s;
+}
+
+.gradient {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+}
+
+.card img {
+  height: 3.5rem;
+  position: absolute;
+  margin-top: -3.75rem;
+}
+
+.card .heading-s {
+  padding-top: 2rem;
+}
+
+.card-hover .heading-m {
+  color: var(--white);
+}
+
+@media (hover: hover) {
+  .card:hover {
+    box-shadow: 0rem 1.5625rem 3.125rem rgba(38, 22, 96, 0.25);
+    transition: ease-in-out 0.3s;
+    transform: scale(1.03);
+  }
+
+  .card img {
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
+  }
+
+  .card img:hover {
+    transform: rotate(360deg);
+    transition: ease-in-out 0.5s;
+  }
+
+  .card img:hover ~ h3 {
+    background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: ease-in-out 0.5s;
+  }
+
+  .card img:hover ~ a,
+  .card h3:hover {
+    color: var(--pink);
+    transition: ease-in-out 0.5s;
+  }
+
+  .card img:hover ~ p {
+    opacity: 0.75;
+    transition: ease-in-out 0.5s;
+  }
+
+  /* *** */
+
+  /* card-hover photo + scale */
+  .card-hover:hover ~ .card {
+    transform: scale(0.95);
+    filter: hue-rotate(-60deg);
+    transition: all ease-in-out 0.5s;
+  }
+
+  .card-hover {
+    transition: all ease-in-out 0.5s;
+  }
+
+  .card-hover:hover {
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-image: url(./assets/card-photo.png);
+    box-shadow: 0rem 1.5625rem 3.125rem rgba(255, 233, 240, 0.25);
+  }
+
+  .card:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  /* *** */
+
+  .btn:hover,
+  .btn-1:hover,
+  .link:hover {
+    opacity: 0.75;
+    transition: all ease 0.3s;
+  }
+
+  .logo:hover,
+  .logo-footer:hover {
+    fill: var(--pink);
+  }
+}
+
+@media (max-width: 75rem) {
+  .hero-img {
+    position: absolute;
+    left: 59.5%;
+    top: -10%;
+  }
+
+  .hero-img img {
+    width: 70%;
+  }
+
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-hover:hover {
+    background-size: cover;
+    background-position: right;
+    background-image: url(./assets/card-photo-tablet.png);
+  }
+
+  .card-hover:hover ~ .card {
+    transform: scale(1);
+    filter: hue-rotate(-60deg);
+    transition: all ease-in-out 0.5s;
+  }
+}
+
+@media (max-width: 50rem) {
+  .heading-xl {
+    font: 800 2.5rem/2.75rem "Plus Jakarta Sans", sans-serif;
+  }
+
+  .body-m {
+    font: 500 1rem/1.5rem "Plus Jakarta Sans", sans-serif;
+  }
+
+  .hero-heading {
+    max-width: 23.75rem;
+  }
+
+  .hero-img {
+    position: absolute;
+    left: 44%;
+    top: -10%;
+  }
+
+  .hero-img img {
+    width: 100%;
+  }
+
+  .features {
+    gap: 1rem;
+    row-gap: 3.125rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  .container {
+    margin: 0;
+  }
+
+  header {
+    padding-bottom: 2.5rem;
+  }
+
+  .hero {
+    overflow: unset;
+    flex-direction: column;
+    padding-top: 1.875rem;
+    gap: 2.5rem;
+    padding-bottom: 0.625rem;
+  }
+
+  .heading-xl {
+    font: 800 2.5rem/2.75rem "Plus Jakarta Sans", sans-serif;
+  }
+
+  .padding-bottom-30,
+  .padding-bottom-50 {
+    padding-bottom: 1.75rem;
+  }
+
+  .hero-img {
+    position: initial;
+  }
+
+  .hero-img img {
+    margin: 0 auto;
+  }
+
+  .hero-heading {
+    max-width: 100%;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 3.125rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .card {
+    padding: 1rem 2rem;
+  }
+
+  .card img {
+    height: 3.125rem;
+    position: absolute;
+    margin-top: -2.5rem;
+  }
+
+  .card-hover:hover {
+    background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+  }
+
+  .card-hover:hover ~ .card {
+    transform: unset;
+    filter: unset;
+  }
+
+  .btn,
+  .btn-1,
+  .btn-2,
+  .btn-3 {
+    font: 500 0.9375rem/1.5rem "Plus Jakarta Sans", sans-serif;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+.bottom {
+  margin-top: 100px;
+  background-color: #24262b;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}

@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <style>
+      input[type="text"] {
+        padding: 10px;
+        font-size: 16px;
+        width: 300px;
+      }
+      input[type="submit"] {
+        padding: 10px;
+        font-size: 16px;
+        background-color: lightblue;
+        border: none;
+        cursor: pointer;
+      }
+      h3 {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      form {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+      }
+      label {
+        display: block;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+      #result {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 20px;
+      }
+      @media (max-width: 600px) {
+        form {
+          width: 100%;
+          padding: 10px;
+        }
+        input[type="text"] {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Calculate Profit or Loss</h3>
+    <form onsubmit="calculateProfitLoss(); return false;">
+      <label for="costPrice">Cost Price:</label>
+      <input type="text" id="costPrice" required><br><br>
+      <label for="salePrice">Sale Price:</label>
+      <input type="text" id="salePrice" required><br><br>
+      <label for="expenses">Expenses:</label>
+      <input type="text" id="expenses" required><br><br>
+      <input type="submit" value="Calculate">
+    </form>
+    <br>
+    Result: <span id="result"></span>
+    
+    <script>
+      function calculateProfitLoss() {
+        let costPrice = parseFloat(document.getElementById("costPrice").value);
+        let salePrice = parseFloat(document.getElementById("salePrice").value);
+        let expenses = parseFloat(document.getElementById("expenses").value);
+        let profitLoss = (salePrice - costPrice - expenses);
+        let result = document.getElementById("result");
+        if (profitLoss > 0) {
+          result.innerHTML = "Profit: Rs." + profitLoss;
+        } else if (profitLoss < 0) {
+          result.innerHTML = "Loss: RS." + Math.abs(profitLoss);
+        } else {
+          result.innerHTML = "Neither Profit nor Loss";
+        }
+      }
+    </script>
+  </body>
+</html>
