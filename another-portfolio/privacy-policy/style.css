@@ -24,22 +24,22 @@ header {
   margin-left: 30px;
   margin-right: 30px;
   font-size: 20px;
-  font-family: 'Lobster Two', cursive;
+  font-family: "Lobster Two", cursive;
 }
 
-h1{
+h1 {
   text-align: center;
   margin: 20px;
   min-width: 200px;
 }
 
-ul{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ul {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
   font-size: 22px;
 }
 
-.points{
+.points {
   font-family: cursive;
   margin-left: 14px;
   margin: auto;

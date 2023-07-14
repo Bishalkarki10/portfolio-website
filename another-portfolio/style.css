@@ -107,7 +107,6 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-
 .image {
   max-width: 450px;
   display: block;
@@ -245,7 +244,6 @@ header {
 .margin-inside {
   padding: 0 2.5rem;
 }
-
 
 .hero {
   margin-top: 50px;
